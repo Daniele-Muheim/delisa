@@ -1,0 +1,16 @@
+<div id="products">
+  <div class="container">
+    <h5 class="section-title h1">Gestecke</h5>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let geschenk of geschenke">
+        <div class="card">
+          <img class=" img-fluid" [src]=geschenk.img>
+          <div class="card-body text-center">
+            <h4 class="card-title">Sunlimetech</h4>
+            <p class="card-text">This is basic card with image on top, title, description and button.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

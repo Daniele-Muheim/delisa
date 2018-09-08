@@ -1,0 +1,17 @@
+<div id="products">
+  <div class="container">
+    <h5 class="section-title h1">Unsere Geschenke</h5>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let geschenk of geschenke">
+        <div class="card">
+          <a routerLink="/geschenke-detail/{{geschenk.id}}">
+            <img class=" img-fluid" [src]="geschenk.img">
+          </a>
+          <div class="card-body text-center">
+            <p class="card-text">{{ geschenk.price }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

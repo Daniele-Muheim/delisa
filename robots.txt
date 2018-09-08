@@ -1,0 +1,8 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://delisa.ch/sitemap.xml
+Sitemap: https://www.delisa.ch/sitemap.xml

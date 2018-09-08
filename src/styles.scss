@@ -1,0 +1,240 @@
+/* FontAwesome for working BootSnippet :> */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #108d6f;
+  border-color: #108d6f;
+  box-shadow: none;
+  outline: none;
+}
+
+.slider-container {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+div .section-title {
+  text-align: center;
+  color: #007b5e;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+#products .card {
+  box-shadow: #d2d2d2 0px 0px 15px;
+  border-radius: 8px;
+  margin-bottom: 5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.parallax-section {
+  background-attachment: fixed !important;
+}
+
+.btn-capsul {
+  border-radius: 30px;
+}
+
+.btn-aqua {
+  background: #0297FF;
+  color: #fff;
+}
+
+.btn-aqua:hover {
+  background: #10629b;
+  color: #fff;
+}
+
+.btn-dark-blue {
+  background: #0C242E;
+  color: #fff;
+}
+
+.btn-dark-blue:hover {
+  background: #063d28;
+  color: #fff;
+}
+
+.relative-box {
+  position: relative
+}
+
+section {
+  float: left;
+  width: 100%;
+  padding: 80px 0;
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+input:focus~label,
+textarea:focus~label,
+input:valid~label,
+textarea:valid~label {
+  font-size: 0.75em;
+  color: white;
+  top: -5px;
+  -webkit-transition: all 0.225s ease;
+  transition: all 0.225s ease;
+}
+
+.styled-input {
+  float: left;
+  width: 293px;
+  margin: 1rem 0;
+  position: relative;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+  .styled-input {
+    width: 100%;
+  }
+
+  .submit-btn {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+}
+
+.styled-input label {
+  color: white;
+  padding: 1.3rem 30px 1rem 30px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.styled-input.wide {
+  width: 650px;
+  max-width: 100%;
+}
+
+input,
+textarea {
+  padding: 30px;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #2d2d2d;
+  color: white;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+}
+
+input:focus~span,
+textarea:focus~span {
+  width: 100%;
+  -webkit-transition: all 0.075s ease;
+  transition: all 0.075s ease;
+}
+
+textarea {
+  width: 100%;
+  min-height: 15em;
+}
+
+.input-container {
+  width: 650px;
+  max-width: 100%;
+  margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+  float: right;
+  padding: 7px 35px;
+  border-radius: 60px;
+  display: inline-block;
+  background-color: #4b8cfb;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  margin-bottom: 5%;
+}
+
+.submit-btn:hover {
+  background-color: #007b5e;
+}
+
+@media (min-width: 980px) {
+  .site-size {
+    margin-left: calc((100% - 980px) / 2);
+    width: 980px;
+  }
+
+  .mobile-href {
+    display: none;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    max-height: 500px !important;
+    border-radius: 8px;
+  }
+  .image:hover {
+    -webkit-filter: grayscale(0%);
+    /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(0%);
+  }
+  
+  .image {
+    transition: filter .5s ease-in-out;
+    -webkit-filter: grayscale(100%);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 980px) {
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    max-height: 500px !important;
+    border-radius: 8px;
+  }
+  .image {
+    margin-bottom: 30px;
+  }
+}
+
+.img-fluid {
+  border-radius: 8px;
+}
+
+body {
+  background-color: #EAEAEA;
+}
