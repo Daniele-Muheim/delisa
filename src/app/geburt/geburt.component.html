@@ -1,16 +1,32 @@
-<div id="products">
-  <div class="container">
-    <h5 class="section-title h1">Geburt</h5>
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let geschenk of geschenke">
-        <div class="card">
-          <img class="img-fluid" [src]=geschenk.img>
-          <div class="card-body text-center">
-            <h4 class="card-title">Sunlimetech</h4>
-            <p class="card-text">This is basic card with image on top, title, description and button.</p>
+<section style="padding: 118px 0">
+  <div id="products">
+    <div>
+      <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="jumbotron-background">
+          <img src="../../assets/img/products/hauptsite/geburt.jpg" style="height: 150%; width: 100%">
+        </div>
+        <div class="container text-white">
+          <h1 class="h1-responsive">Passende selbstgemachte Geschenke für eine Geburt</h1>
+          <hr class="my-4">
+          <p>Preis und Motiv auf Anfrage. Per Telefon <a href="tel:0795762753">anrufen</a> oder über das Kontakformular
+            melden.
+            Gerne können Sie uns auch ein Mail schreiben an
+            <a href="mailto:delisa.handwerk@gmail.com">delisa.handwerk@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row" >
+        <div class="col-xs-12 col-sm-6 col-md-4 mb-3" *ngFor="let geburt of geburt" data-aos="fade-down" data-aos-duration="1000">
+          <div class="card">
+              <img class="img-small" [src]="geburt.img">
+            <div class="card-body text-center">
+              <p>{{ geburt.title }}</p>
+              <p>{{ geburt.price }}</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div id="products">
+</section>

@@ -1,43 +1,95 @@
-<div class="container ">
-  <div class="col-md-12">
-    <h1 style="text-align:center">Kontaktieren uns</h1>
+<section style="padding: 118px 0">
+  <div class="container-fluid mb-5">
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <iframe width="100%" height="350px" id="gmap_canvas"
+            src="https://maps.google.com/maps?q=usserhus%209&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+            scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+          <div class="card-body">
+            <div class="form-header" style="text-align: center;">
+              <h3><i class="fas fa-envelope"></i> Schreiben Sie uns eine Nachricht</h3>
+              <p>Wir freuen uns über jede Anfrage</p>
+            </div>
+            <br>
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+              <div class="container">
+                <div class="md-form" style="margin-top: 100px;">
+                  <i class="fas fa-user prefix grey-text"></i>
+                  <input type="text" class="form-control" type="text" formControlName="firstName"
+                    [ngClass]="{ 'is-invalid': submitted && getContactFormControls.firstName.errors }">
+                  <label for="form3">Name</label>
+                  <div *ngIf="submitted && getContactFormControls.firstName.errors" class="invalid-feedback">
+                    <div *ngIf="getContactFormControls.firstName.errors.required">Vorname muss angegeben werden</div>
+                  </div>
+                </div>
+                <div class="md-form">
+                  <i class="fas fa-envelope prefix grey-text"></i>
+                  <input type="text" class="form-control" formControlName="email"
+                    [ngClass]="{ 'is-invalid': submitted && getContactFormControls.email.errors }">
+                  <label for="form2">Email</label>
+                  <div *ngIf="submitted && getContactFormControls.email.errors" class="invalid-feedback">
+                    <div *ngIf="getContactFormControls.email.errors.required">Email muss angegeben werden</div>
+                    <div *ngIf="getContactFormControls.email.errors.email">Geben Sie eine richtige Email Address ein
+                    </div>
+                  </div>
+                </div>
+
+                <div class="md-form">
+                  <i class="fas fa-mobile-alt prefix grey-text"></i>
+                  <input type="text" class="form-control" formControlName="phone"
+                    [ngClass]="{ 'is-invalid': submitted && getContactFormControls.phone.errors }">
+                  <label for="form2">Telefonnummer</label>
+                  <div *ngIf="submitted && getContactFormControls.phone.errors" class="invalid-feedback">
+                    <div *ngIf="getContactFormControls.phone.errors.required">Telefonnummer muss angegeben werden</div>
+                  </div>
+                </div>
+
+                <div class="md-form">
+                  <i class="fas fa-pencil-alt prefix grey-text"></i>
+                  <textarea type="text" class="md-textarea form-control" formControlName="message"
+                    [ngClass]="{ 'is-invalid': submitted && getContactFormControls.message.errors }"></textarea>
+                  <label for="form2">Nachricht</label>
+                  <div *ngIf="submitted && getContactFormControls.message.errors" class="invalid-feedback">
+                    <div *ngIf="getContactFormControls.message.errors.required">Bitte schreiben Sie uns eine Nachricht
+                    </div>
+                  </div>
+                </div>
+
+                <div [hidden]="!successMessage" class="alert alert-success col-md-12 col-sm-12">
+                  Anfrage war erfolgreich
+                </div>
+                <div class="float-right">
+                  <button class="btn btn-indigo">Anfrage senden</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row text-center">
+      <div class="col-md-6">
+        <a class="btn-floating accent-1"> <i class="fas fa-map-marker-alt fa-4x"></i>
+        </a>
+        <p>Usserhus 9,
+          6023 Rothenburg</p>
+        <p> Montag Geschlossen</p>
+        <p> Dienstag Geschlossen</p>
+        <p> Mittwoch Geschlossen</p>
+        <p> Donnerstag 09:00–19:00</p>
+        <p> Freitag 09:00–19:00</p>
+        <p> Samstag 09:00–19:00</p>
+        <p> Sonntag Geschlossen</p>
+      </div>
+      <div class="col-md-6">
+        <a class="btn-floating accent-1"><i class="fas fa-envelope fa-4x"></i></a>
+        <p><a href="mailto: delisa.handwerk@gmail.com">delisa.handwerk@gmail.com</a></p>
+        <p>E-Mails werden so schnell wie möglich bearbeitet</p>
+      </div>
+    </div>
   </div>
-  <div class="col-md-12">
-    <h4 style="text-align:center">We'd love to hear from you!</h4>
-  </div>
-  <div class="row input-container">
-    <div class="col-md-6 col-sm-12">
-      <div class="styled-input">
-        <input type="text" required />
-        <label>Vorname</label>
-      </div>
-    </div>
-    <div class="col-md-6 col-sm-12">
-      <div class="styled-input">
-        <input type="text" required />
-        <label>Name</label>
-      </div>
-    </div>
-    <div class="col-md-6 col-sm-12">
-      <div class="styled-input">
-        <input type="text" required />
-        <label>Email</label>
-      </div>
-    </div>
-    <div class="col-md-6 col-sm-12">
-      <div class="styled-input" style="float:right;">
-        <input type="text" required />
-        <label>Telefon Number</label>
-      </div>
-    </div>
-    <div class="col-xs-12 col-md-12">
-      <div class="styled-input wide">
-        <textarea required></textarea>
-        <label>Nachricht</label>
-      </div>
-    </div>
-    <div class="col-xs-12 container">
-      <div class="btn-lrg submit-btn">Nachricht senden</div>
-    </div>
-  </div>
-</div>
+</section>

@@ -1,0 +1,97 @@
+<section style="padding: 118px 0">
+  <div id="products">
+    <div class="jumbotron jumbotron-fluid bg-dark">
+      <div class="jumbotron-background">
+        <img src="../../assets/img/products/hauptsite/titelbild_3.jpg" style="height: 100%; width: 100%">
+      </div>
+      <div class="container text-white">
+        <h1 class="h1-responsive">Gesägtes aus Holz</h1>
+        <hr class="my-4">
+        <p>Verschiedene Holzprodukte aus verschiedenen</p>
+      </div>
+    </div>
+    <div class="filter-menu">
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg mb-5" style="background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0,0,0,0.02) 50%, rgba(255,255,255,0.02) 61%, rgba(0,0,0,0.02) 73%), linear-gradient(33deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);
+        background-blend-mode: normal,color-burn;">
+        <!-- Navbar brand -->
+        <span class="navbar-brand">Categories:</span>
+        <!-- Collapsible content -->
+        <!-- Links -->
+        <div class="row">
+          <ul class="nav nav-pills" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <button class="nav-link active btn btn-primary button-position-buttom" style="background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+                  background-blend-mode: multiply;" id="gesaegtes-all-tab" data-toggle="pill"
+                data-target="#gesaegtes-all" role="tab" aria-controls="gesaegtes-all" aria-selected="true">Alle</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link btn btn-primary button-position-buttom" style="background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+                  background-blend-mode: multiply;" id="weihnachten-tab" data-toggle="pill" data-target="#weihnachten"
+                role="tab" aria-controls="weihnachten" aria-selected="false">Weihnachten</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link btn btn-primary button-position-buttom" style="background:linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%); 
+                  background-blend-mode: multiply;" id="ostern-tab" data-toggle="pill" data-target="#ostern" role="tab"
+                aria-controls="ostern" aria-selected="false">Ostern</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container" style="max-width: 1500px;">
+      <div class="row">
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane show active" id="gesaegtes-all" role="tabpanel" aria-labelledby="gesaegtes-all-tab">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-4 mb-3" *ngFor="let gesaegtes of gesaegtes" data-aos="fade-down"
+                data-aos-duration="1000">
+                <div class="card">
+                  <a routerLink="/gesaegtes-detail/{{gesaegtes.id}}">
+                    <img class="img-small" [src]="gesaegtes.img">
+                  </a>
+                  <div class="card-body text-center">
+                    <p>{{ gesaegtes.title }}</p>
+                    <p>{{ gesaegtes.price }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="weihnachten" role="tabpanel" aria-labelledby="weihnachten-tab">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-4 mb-3" *ngFor="let gesaegtes of wintergesaegtes" data-aos="fade-down"
+                data-aos-duration="1000">
+                <div class="card">
+                  <a routerLink="/gesaegtes-detail/{{gesaegtes.id}}">
+                    <img class="img-small" [src]="gesaegtes.img">
+                  </a>
+                  <div class="card-body text-center">
+                    <p>{{ gesaegtes.title }}</p>
+                    <p>{{ gesaegtes.price }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="ostern" role="tabpanel" aria-labelledby="ostern-tab">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-4 mb-3" *ngFor="let gesaegtes of summergesaegtes" data-aos="fade-down"
+                data-aos-duration="1000">
+                <div class="card">
+                  <a routerLink="/gesaegtes-detail/{{gesaegtes.id}}">
+                    <img class="img-small" [src]="gesaegtes.img">
+                  </a>
+                  <div class="card-body text-center">
+                    <p>{{ gesaegtes.title }}</p>
+                    <p>{{ gesaegtes.price }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

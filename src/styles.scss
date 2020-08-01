@@ -1,15 +1,32 @@
-/* FontAwesome for working BootSnippet :> */
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url(~fullpage.js/dist/fullpage.min.css);
+
+$white-color: white;
+$image-margin: 30px;
+$border-radius: 8px;
+
+body {
+  background-color: #EAEAEA;
+  font-family: Verdana;
+  font-size: 20px;
+}
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #108d6f;
+  background-color: #C0C0C0;
   border-color: #108d6f;
   box-shadow: none;
   outline: none;
 }
 
-.slider-container {
+.h1-text-leadinpage {
+  font-weight: 800;
+  color: #000000;
+  font-family: "Open Sans", Arial, sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+¨ .slider-container {
   padding-top: .5rem;
   padding-bottom: .5rem;
 }
@@ -17,14 +34,47 @@
 div .section-title {
   text-align: center;
   color: #007b5e;
-  margin-bottom: 50px;
+  margin: 20px;
   text-transform: uppercase;
 }
 
 #products .card {
   box-shadow: #d2d2d2 0px 0px 15px;
   border-radius: 8px;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
+  max-height: 100%;
+  min-height: 95%;
+}
+
+.jumbotron {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin: 0;
+}
+
+.jumbotron .container {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.breadcramp {
+  padding: 10em 0;
+}
+
+.jumbotron-background {
+  object-fit: cover;
+  font-family: 'object-fit: cover;';
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
 }
 
 h1,
@@ -32,7 +82,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Verdana;
 }
 
 .parallax-section {
@@ -45,22 +95,22 @@ h5 {
 
 .btn-aqua {
   background: #0297FF;
-  color: #fff;
+  color: $white-color;
 }
 
 .btn-aqua:hover {
   background: #10629b;
-  color: #fff;
+  color: $white-color;
 }
 
 .btn-dark-blue {
   background: #0C242E;
-  color: #fff;
+  color: $white-color;
 }
 
 .btn-dark-blue:hover {
   background: #063d28;
-  color: #fff;
+  color: $white-color;
 }
 
 .relative-box {
@@ -70,20 +120,20 @@ h5 {
 section {
   float: left;
   width: 100%;
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
-.navbar .navbar-nav {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
 
-.navbar .navbar-collapse {
-  text-align: center;
+.navbar {
+  .navbar-nav {
+    position: relative;
+    font-size: 25px;
+    font-family: Verdana;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
 }
 
 input:focus~label,
@@ -91,7 +141,6 @@ textarea:focus~label,
 input:valid~label,
 textarea:valid~label {
   font-size: 0.75em;
-  color: white;
   top: -5px;
   -webkit-transition: all 0.225s ease;
   transition: all 0.225s ease;
@@ -118,7 +167,6 @@ textarea:valid~label {
 }
 
 .styled-input label {
-  color: white;
   padding: 1.3rem 30px 1rem 30px;
   position: absolute;
   top: 10px;
@@ -133,14 +181,12 @@ textarea:valid~label {
   max-width: 100%;
 }
 
-input,
+.form-control,
 textarea {
   padding: 30px;
   border: 0;
   width: 100%;
   font-size: 1rem;
-  background-color: #2d2d2d;
-  color: white;
   border-radius: 4px;
 }
 
@@ -156,36 +202,18 @@ textarea:focus~span {
   transition: all 0.075s ease;
 }
 
-textarea {
-  width: 100%;
-  min-height: 15em;
-}
-
 .input-container {
   width: 650px;
   max-width: 100%;
   margin: 20px auto 25px auto;
 }
 
-.submit-btn {
-  float: right;
-  padding: 7px 35px;
-  border-radius: 60px;
-  display: inline-block;
-  background-color: #4b8cfb;
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
-  margin-bottom: 5%;
-}
-
 .submit-btn:hover {
   background-color: #007b5e;
 }
 
-@media (min-width: 980px) {
+@media (min-width: 980px),
+(max-width: 1920px) {
   .site-size {
     margin-left: calc((100% - 980px) / 2);
     width: 980px;
@@ -195,46 +223,186 @@ textarea {
     display: none;
   }
 
-  .carousel-inner img {
+  .carousel-img {
     width: 100%;
-    height: 100%;
-    max-height: 500px !important;
-    border-radius: 8px;
-  }
-  .image:hover {
-    -webkit-filter: grayscale(0%);
-    /* Ch 23+, Saf 6.0+, BB 10.0+ */
-    filter: grayscale(0%);
-  }
-  
-  .image {
-    transition: filter .5s ease-in-out;
-    -webkit-filter: grayscale(100%);
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
+    height: 100vh;
+    position: inherit;
     background-size: cover;
-    filter: grayscale(100%);
-    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: top center;
+
   }
+
 }
 
 @media (max-width: 980px) {
+
+  .img-small {
+    max-height: 300px;
+    min-height: 300px;
+    width: 100%;
+  }
+
+  .img-big {
+    max-height: 380px;
+    min-height: 380px;
+    width: 100%;
+  }
+
+  .image {
+    margin-bottom: $image-margin;
+  }
+
+  .slideshow {
+    margin-top: 100px;
+  }
+
   .carousel-inner img {
     width: 100%;
     height: 100%;
-    max-height: 500px !important;
-    border-radius: 8px;
-  }
-  .image {
-    margin-bottom: 30px;
+    height: 450px;
+    position: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
   }
 }
 
 .img-fluid {
-  border-radius: 8px;
+  border-radius: $border-radius;
+  max-width: 95%;
 }
 
-body {
-  background-color: #EAEAEA;
+.img-small {
+  height: 300px;
+  width: 100%;
+}
+
+.container-img {
+  margin-top: 50px;
+}
+
+.overview {
+  padding: 0 !important
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: background 0.5s ease;
+  border: 8px;
+}
+
+.container-img:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+  border-radius: $border-radius
+}
+
+.container:hover .title {
+  top: 90px;
+}
+
+.button {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 150px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.button a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+}
+
+.container-img:hover .button {
+  opacity: 1;
+}
+
+.title {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 110px;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  transition: top .5s ease;
+}
+
+.container-img:hover .title {
+  top: 90px;
+}
+
+.text-primary {
+  color: #3D6647 !important;
+}
+
+@media (min-width: 768px) {
+  .newArriaval {
+    .carousel-inner img {
+      height: 300px;
+    }
+  }
+}
+
+
+footer {
+  font-family: Roboto, sans-serif;
+}
+
+
+.rgba-gradient {
+  background: rgba(35, 7, 77, 0.6);
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(204, 83, 51, 0.6), rgba(35, 7, 77, 0.6));
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(204, 83, 51, 0.6), rgba(35, 7, 77, 0.6));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.img-gradient:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(220, 66, 37, 0.5)), color-stop(100%, rgba(0, 47, 75, 0.5)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 47, 75, 0.5)), to(rgba(220, 66, 37, 0.5)));
+  background: linear-gradient(to bottom, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#002f4b', endColorstr='#00000000', GradientType=0);
+  /* IE6-9 */
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: black;
+  background-color: transparent;
+}
+
+.filter-menu {
+  max-width: 100%;
 }

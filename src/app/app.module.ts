@@ -1,45 +1,66 @@
-import { NgModule, NO_ERRORS_SCHEMA  }       from '@angular/core';
-import { BrowserModule }  from '@angular/platform-browser';
-import { FormsModule }    from '@angular/forms';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { Router } from '@angular/router';
+import { OwlModule } from 'ngx-owl-carousel';
 
-import { AppComponent }            from './app.component';
-import { AppRoutingModule }        from './app-routing.module';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { LightboxModule } from 'ngx-lightbox';
 
-import { PageNotFoundComponent }   from './not-found.component';
-import { GeschenkeComponent } from './geschenk/geschenk.component';
-import { HomeComponent } from './home/home.component';
-import { GesteckeComponent } from './gestecke/gestecke.component';
-import { GeburtComponent } from './geburt/geburt.component'
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 import { ContactComponent } from './contact/contact.component';
+import { GeburtComponent } from './geburt/geburt.component';
+import { GesaegtesComponent } from './gesaegtes/gesaegtes.component';
+import { GesaegtesDetailComponent } from './gesaegtes/gesaegtes-detail/gesaegtes-detail.component';
+import { GeschenkeComponent } from './geschenk/geschenk.component';
 import { GeschenkeDetailComponent } from './geschenk/geschenke-detail/geschenk-detail.component';
+import { GesteckeComponent } from './gestecke/gestecke.component';
+import { GesteckeDetailComponent } from './gestecke/gestecke-detail/gestecke-detail.component';
+import { GrabComponent } from './grab/grab.component';
+import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './not-found.component';
+import { GrabDetailComponent } from './grab/grab-detail/grab-detail.component';
+import { CommonModule } from '@angular/common';
+import { TransferHttpCacheModule } from '@nguniversal/common';
+import { HttpClientModule } from '@angular/common/http';
+import { NgtUniversalModule } from '@ng-toolkit/universal';
+import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 
 @NgModule({
   imports: [
-    BrowserModule,
-    FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    BrowserModule.withServerTransition({ appId: 'my-app' }),
+    FormsModule,
+    ReactiveFormsModule,
+    LightboxModule,
+    MDBBootstrapModule.forRoot(),
+    CommonModule,
+    TransferHttpCacheModule,
+    HttpClientModule,
+    NgtUniversalModule,
+    OwlModule,
+    AngularFullpageModule
   ],
-  schemas: [ NO_ERRORS_SCHEMA ],
   declarations: [
     AppComponent,
-    PageNotFoundComponent,
+    ContactComponent,
+    GeburtComponent,
+    GesaegtesComponent,
+    GesaegtesDetailComponent,
     GeschenkeComponent,
     GeschenkeDetailComponent,
-    HomeComponent,
     GesteckeComponent,
-    GeburtComponent,
-    ContactComponent
+    GesteckeDetailComponent,
+    GrabComponent,
+    GrabDetailComponent,
+    HomeComponent,
+    PageNotFoundComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-  // Diagnostic only: inspect router configuration
-  constructor(router: Router) {
-    console.log('Routes: ', JSON.stringify(router.config, undefined, 2));
-  }
-}
+export class AppModule { }
