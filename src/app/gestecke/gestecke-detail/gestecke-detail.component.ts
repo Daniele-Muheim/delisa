@@ -1,7 +1,7 @@
+import { GESTECKE } from './../../../shared/data/data-gestecke';
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DataService } from '../../../shared/services/data.service';
-import { GESTECKE } from '../../../shared/data/data-gestecke';
 import { Lightbox } from 'ngx-lightbox';
 
 @Component({
@@ -13,7 +13,7 @@ export class GesteckeDetailComponent {
   id: number;
   gestecke: any;
   recommendations: any[] = [];
-  private _album = [];
+  _album = [];
 
   constructor(private route: ActivatedRoute, private dataService: DataService, private _lightbox: Lightbox) { }
 
@@ -23,6 +23,7 @@ export class GesteckeDetailComponent {
   }
 
   getData(): void {
+    console.log(this.gesteck);
     this.id = +this.route.snapshot.paramMap.get('id');
     this.dataService.getDataByID(this.id, GESTECKE)
       .subscribe(gesteck => this.gesteck = gesteck);
@@ -34,13 +35,14 @@ export class GesteckeDetailComponent {
   }
 
   createRecommendation() {
+    console.log(this.dataService.getData(GESTECKE).subscribe(gestecke => this.gestecke = gestecke))
     this.dataService.getData(GESTECKE).subscribe(gestecke => this.gestecke = gestecke);
     for (let i = 0; i < 3; i++) {
-      let random = Math.floor(Math.random() * this.gesteck.length);
-      if (random === this.gesteck.id || random === 0) {
+      let random = Math.floor(Math.random() * this.gestecke.length);
+      if (random === this.gestecke.id || random === 0) {
         random = Math.floor(Math.random() * this.gesteck.length);
       }
-      this.recommendations.push(this.gesteck.find(i => i.id === random));
+      this.recommendations.push(this.gestecke.find((gesteck: any) => gesteck.id === random));
     }
   }
 

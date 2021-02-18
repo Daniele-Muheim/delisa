@@ -23,6 +23,7 @@ export class GesaegtesComponent {
   getAllData(): void {
     this.dataService.getData(GESAEGTES)
       .subscribe(gesaegtes => this.gesaegtes = gesaegtes);
+    this.gesaegtes.reverse();
     const currentMonth = this.dateObj.getMonth() + 1;
     if (currentMonth >= 10 || currentMonth <= 3) {
       this.gesaegtes.sort(function (a, b) {
@@ -41,21 +42,26 @@ export class GesaegtesComponent {
 
   getAllSummerData() {
     this.summergesaegtes = this.gesaegtes.filter(function (gesaegtes) {
-      return gesaegtes.season == "sommer";
+      return gesaegtes.season === 'sommer';
     });
-    for (var i = this.summergesaegtes.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var temp = this.summergesaegtes[i];
+    for (let i = this.summergesaegtes.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const temp = this.summergesaegtes[i];
       this.summergesaegtes[i] = this.summergesaegtes[j];
       this.summergesaegtes[j] = temp;
     }
-    console.log(this.summergesaegtes);
-
   }
 
   getAllWinterData() {
     this.wintergesaegtes = this.gesaegtes.filter(function (gesaegtes) {
-      return gesaegtes.season == "winter";
+      return gesaegtes.season === 'winter';
     });
+
+    for (let i = this.wintergesaegtes.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const temp = this.wintergesaegtes[i];
+      this.wintergesaegtes[i] = this.wintergesaegtes[j];
+      this.wintergesaegtes[j] = temp;
+    }
   }
 }

@@ -30,7 +30,7 @@ export class GesaegtesDetailComponent {
       src: this.gesaegtes.img,
       thumb: this.gesaegtes.img
     };
-    this._album.push(album)
+    this._album.push(album);
   }
 
   createRecommendation() {

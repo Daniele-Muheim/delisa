@@ -19,8 +19,14 @@
   <url>
     <loc>https://delisa.ch/contact</loc>
   </url>
-    <url>
+  <url>
     <loc>https://delisa.ch/grabschmuck</loc>
+  </url>
+    <url>
+    <loc>https://delisa.ch/geknuepftes</loc>
+  </url>
+  <url>
+    <loc>https://delisa.ch/partner</loc>
   </url>
 </urlset>
 <!--<guid value="c3dc5890-cae0-458f-a3c5-91c5a8a437d6" />-->

@@ -1,3 +1,5 @@
+import { environment } from './../environments/environment';
+import { PartnerComponent } from './Partner/partner.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -28,6 +30,10 @@ import { TransferHttpCacheModule } from '@nguniversal/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NgtUniversalModule } from '@ng-toolkit/universal';
 import { AngularFullpageModule } from '@fullpage/angular-fullpage';
+import { MakrameeComponent } from './makramee/makramee.component';
+import { MakrameeDetailComponent } from './makramee/makramee-detail/makramee-detail.component';
+//import { AngularFireModule } from '@angular/fire'
+//import { AngularFireDatabaseModule } from '@angular/fire/database'
 
 @NgModule({
   imports: [
@@ -43,7 +49,9 @@ import { AngularFullpageModule } from '@fullpage/angular-fullpage';
     HttpClientModule,
     NgtUniversalModule,
     OwlModule,
-    AngularFullpageModule
+    AngularFullpageModule,
+    //AngularFireModule.initializeApp(environment),
+    //AngularFireDatabaseModule
   ],
   declarations: [
     AppComponent,
@@ -58,6 +66,9 @@ import { AngularFullpageModule } from '@fullpage/angular-fullpage';
     GrabComponent,
     GrabDetailComponent,
     HomeComponent,
+    MakrameeComponent,
+    MakrameeDetailComponent,
+    PartnerComponent,
     PageNotFoundComponent
   ],
   providers: [],

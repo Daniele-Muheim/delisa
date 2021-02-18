@@ -23,6 +23,7 @@ export class GesteckeComponent {
   getAllData(): void {
     this.dataService.getData(GESTECKE)
       .subscribe(gestecke => this.gestecke = gestecke);
+    this.gestecke.reverse();
     const currentMonth = this.dateObj.getMonth() + 1;
     if (currentMonth >= 10 || currentMonth <= 3) {
       this.gestecke.sort(function (a, b) {
@@ -41,19 +42,26 @@ export class GesteckeComponent {
 
   getAllSummerData() {
     this.summerGestecke = this.gestecke.filter(function (gestecke) {
-      return gestecke.season == "sommer";
+      return gestecke.season === 'sommer';
     });
-    for (var i = this.summerGestecke.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var temp = this.summerGestecke[i];
-      this.summerGestecke[i] = this.summerGestecke[j];
-      this.summerGestecke[j] = temp;
+    for (let i = this.summerGestecke.length - 1; i > 0; i--) {
+      const randomNumber = Math.floor(Math.random() * (i + 1));
+      const temp = this.summerGestecke[i];
+      this.summerGestecke[i] = this.summerGestecke[randomNumber];
+      this.summerGestecke[randomNumber] = temp;
     }
   }
 
   getAllWinterData() {
     this.winterGestecke = this.gestecke.filter(function (gestecke) {
-      return gestecke.season == "winter";
+      return gestecke.season === 'winter';
     });
+
+    for (let i = this.winterGestecke.length - 1; i > 0; i--) {
+      const randomNumber = Math.floor(Math.random() * (i + 1));
+      const temp = this.winterGestecke[i];
+      this.winterGestecke[i] = this.winterGestecke[randomNumber];
+      this.winterGestecke[randomNumber] = temp;
+    }
   }
 }

@@ -1,473 +1,678 @@
 
 export const GESTECKE: any[] = [
   {
-    id: 1, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_1.jpg",
-    title: "Gesteck mit 4 Kerzen",
-    description: "» wenn es in den Häusern zu leuchten beginnt und die Herzen schneller schlagen, dann lass mich sagen, es wird bald Weihnachten sein «",
-    text: "Heute ein kleines Prachtstück aus unserer Sammlung. Als Tischschmuck oder als Adventskranz. Wie auch immer ihr eure Häuser zum Leuchten bringen wollt...eure Wünsche sind herzlich willkommen!",
-    price: "55.50",
-    season: "winter"
+    id: 1,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_1.jpg',
+    title: 'Gesteck mit 4 Kerzen',
+    description: '» wenn es in den Häusern zu leuchten beginnt und die Herzen schneller schlagen, dann lass mich sagen, es wird bald'
+    + 'Weihnachten sein «',
+    text: 'Heute ein kleines Prachtstück aus unserer Sammlung. Als Tischschmuck oder als Adventskranz.'
+    + ' Wie auch immer ihr eure Häuser zum Leuchten bringen wollt...eure Wünsche sind herzlich willkommen!',
+    price: '55.50',
+    season: 'winter'
   },
   {
-    id: 2, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_2.jpg",
-    titel: "» Adventsgesteck 1er violet «",
-    price: "22.50",
-    season: "winter"
+    id: 2,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_2.jpg',
+    titel: '» Adventsgesteck 1er violet «',
+    price: '22.50',
+    season: 'winter'
   },
   {
-    id: 3, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_3.jpg",
-    text: "» Tulpenstrauss «",
-    price: "15.-",
-    season: "winter"
+    id: 3,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_3.jpg',
+    text: '» Tulpenstrauss «',
+    price: '15',
+    season: 'winter'
   },
   {
-    id: 4, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_4.jpg",
-    text: "» Adventsgesteck mit einer weissen Kerze «",
-    price: "36.-",
-    season: "winter"
+    id: 4,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_4.jpg',
+    text: '» Adventsgesteck mit einer weissen Kerze «',
+    price: '36',
+    season: 'winter'
   },
   {
-    id: 5, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_5.jpg",
-    text: "» Gesteck mit vier Orangen Kerzen «",
-    price: "38.-",
-    season: "winter"
+    id: 5,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_5.jpg',
+    text: '» Gesteck mit vier Orangen Kerzen «',
+    price: '38',
+    season: 'winter'
   },
   {
-    id: 6, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_6.jpg",
-    text: "» Callastrauss «",
-    price: "55.50",
-    season: "sommer"
+    id: 6,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_6.jpg',
+    text: '» Callastrauss «',
+    price: '55.50',
+    season: 'sommer'
   },
   {
-    id: 7, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_7.jpg",
-    text: "» Gesteck mit Spiegel «",
-    price: "39.-",
-    season: "sommer"
+    id: 7,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_7.jpg',
+    text: '» Gesteck mit Spiegel «',
+    price: '39',
+    season: 'sommer'
   },
   {
-    id: 8, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_8.jpg",
-    text: "» Märchenwald «",
-    price: "75.-",
-    season: "winter"
+    id: 8,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_8.jpg',
+    text: '» Märchenwald «',
+    price: '75',
+    season: 'winter'
   },
   {
-    id: 9, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_9.jpg",
-    text: "» Adventsgesteck 4er violet «",
-    price: "36.-",
-    season: "winter"
+    id: 9,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_9.jpg',
+    text: '» Adventsgesteck 4er violet «',
+    price: '36',
+    season: 'winter'
   },
   {
-    id: 10, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_10.jpg",
-    text: "» Der Hirsch im Wald «",
-    price: "38.-",
-    season: "winter"
+    id: 10,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_10.jpg',
+    text: '» Der Hirsch im Wald «',
+    price: '38',
+    season: 'winter'
   },
   {
-    id: 11, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_11.jpg",
-    text: "» Engel «",
-    price: "19.-",
-    season: "winter"
+    id: 11,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_11.jpg',
+    text: '» Engel «',
+    price: '19',
+    season: 'winter'
   },
   {
-    id: 12, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_12.jpg",
-    text: "» Sack «",
-    price: "7.-",
-    season: "winter"
+    id: 12,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_12.jpg',
+    text: '» Sack «',
+    price: '7',
+    season: 'winter'
   },
   {
-    id: 13, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_13.jpg",
-    text: "» Adventsgesteck 4er türkis «",
-    price: "44.-",
-    season: "winter"
+    id: 13,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_13.jpg',
+    text: '» Adventsgesteck 4er türkis «',
+    price: '44',
+    season: 'winter'
   },
   {
-    id: 14, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_14.jpg",
-    text: "» Palmblatt mit Engel«",
-    price: "57.-",
-    season: "winter"
+    id: 14,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_14.jpg',
+    text: '» Palmblatt mit Engel«',
+    price: '57',
+    season: 'winter'
   },
   {
-    id: 15, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_15.jpg",
-    text: "» Rosa Kerze auf Spiegel «",
-    price: "24.-",
-    season: "winter"
+    id: 15,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_15.jpg',
+    text: '» Rosa Kerze auf Spiegel «',
+    price: '24',
+    season: 'winter'
   },
   {
-    id: 16, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_16.jpg",
-    text: "» Palmblatt mit Rosen«",
-    price: "57.-",
-    season: "winter"
+    id: 16,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_16.jpg',
+    text: '» Palmblatt mit Rosen«',
+    price: '57',
+    season: 'winter'
   },
   {
-    id: 17, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_18.jpg",
-    text: "» Tulpen in Glasvase «",
-    price: "58.-",
-    season: "sommer"
+    id: 17,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_18.jpg',
+    text: '» Tulpen in Glasvase «',
+    price: '58',
+    season: 'sommer'
   },
   {
-    id: 18, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_19.jpg",
-    text: "» Adventskranz 4er grün «",
-    price: "40.-",
-    season: "winter"
+    id: 18,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_19.jpg',
+    text: '» Adventskranz 4er grün «',
+    price: '40',
+    season: 'winter'
   },
   {
-    id: 19, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_20.jpg",
-    text: "» Palmenblatt im grünen «",
-    price: "61.-"
+    id: 19,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_20.jpg',
+    text: '» Palmenblatt im grünen «',
+    price: '61'
   },
   {
-    id: 20, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_21.jpg",
-    text: "» Adventskranz 1er Orange «",
-    price: "28.-",
-    season: "winter"
+    id: 20,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_21.jpg',
+    text: '» Adventskranz 1er Orange «',
+    price: '28',
+    season: 'winter'
   },
   {
-    id: 21, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_22.jpg",
-    text: "» Adventskranz 4er Braun «",
-    price: "45.-",
-    season: "winter"
+    id: 21,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_22.jpg',
+    text: '» Adventskranz 4er Braun «',
+    price: '45',
+    season: 'winter'
   },
   {
-    id: 22, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_23.jpg",
-    text: "» Schönes Blumengesteck«",
-    price: "59.-",
-    season: "sommer"
+    id: 22,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_23.jpg',
+    text: '» Schönes Blumengesteck«',
+    price: '59',
+    season: 'sommer'
   },
   {
-    id: 23, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_24.jpg",
-    text: "» Adventskranz 4er weiss «",
-    price: "49.-",
-    season: "winter"
+    id: 23,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_24.jpg',
+    text: '» Adventskranz 4er weiss «',
+    price: '49',
+    season: 'winter'
   },
   {
-    id: 24, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_25.jpg",
-    text: "» Schneelandschaft «",
-    price: "27.-",
-    season: "winter"
+    id: 24,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_25.jpg',
+    text: '» Schneelandschaft «',
+    price: '27',
+    season: 'winter'
   },
   {
-    id: 25, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_26.jpg",
-    text: "» Adventskranz 1er weiss «",
-    price: "28.-",
-    season: "winter"
+    id: 25,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_26.jpg',
+    text: '» Adventskranz 1er weiss «',
+    price: '28',
+    season: 'winter'
   },
   {
-    id: 26, 
-    img: "assets/img/products/gestecke/bilder_klein/gestecke_27.jpg",
-    text: "» Kerze im Vogelkäfig «",
-    price: "29.-",
-    season: "winter"
+    id: 26,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_27.jpg',
+    text: '» Kerze im Vogelkäfig «',
+    price: '29',
+    season: 'winter'
   },
   {
-    id: 27, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_28.jpg",
-    text: "» Adventsgesteck 4er grün «",
-    price: "Preis auf Anfrage.-",
-    season: "winter"
+    id: 27,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_28.jpg',
+    text: '» Adventsgesteck 4er grün «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
   },
   {
-    id: 28, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_29.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "winter"
+    id: 28,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_29.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
   },
   {
-    id: 29, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_30.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "winter"
+    id: 29,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_30.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
   },
   {
-    id: 30, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_31.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "winter"
+    id: 30,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_31.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
   },
   {
-    id: 31, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_32.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "winter"
+    id: 31,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_32.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
   },
   {
-    id: 32, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_33.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "winter"
+    id: 32,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_33.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
   },
   {
-    id: 33, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_34.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "winter"
+    id: 33,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_34.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
   },
   {
-    id: 34, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_35.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "winter"
+    id: 34,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_35.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
   },
   {
-    id: 35, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_36.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 35,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_36.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 36, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_37.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 36,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_37.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 37, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_38.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 37,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_38.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 38, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_39.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 38,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_39.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 39, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_40.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 39,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_40.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 40, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_41.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 40,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_41.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 41, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_42.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 41,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_42.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 42, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_43.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 42,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_43.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 43, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_44.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 43,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_44.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 44, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_45.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 44,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_45.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 45, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_46.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 45,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_46.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 46, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_47.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 46,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_47.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 47, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_48.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 47,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_48.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 48, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_49.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 48,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_49.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 49, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_50.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 49,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_50.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 50, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_51.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 50,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_51.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 51, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_52.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 51,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_52.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 52, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_53.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 52,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_53.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 53, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_54.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 53,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_54.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 54, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_55.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer",
+    id: 54,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_55.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer',
   },
   {
-    id: 55, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_56.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 55,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_56.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 56, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_57.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 56,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_57.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 57, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_58.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 57,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_58.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 58, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_59.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 58,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_59.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 59, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_60.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 59,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_60.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 60, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_61.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 60,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_61.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 61, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_62.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 61,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_62.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 62, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_63.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 62,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_63.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 63, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_64.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 63,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_64.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 64, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_65.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 64,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_65.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 65, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_66.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 65,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_66.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 66, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_67.jpg",
-    text: "»  «",
-    price: "Preis auf Anfrage.-",
-    season: "sommer"
+    id: 66,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_67.jpg',
+    text: '»  «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
   },
   {
-    id: 67, 
-    img: "assets/img/products/gestecke/bilder_gross/gestecke_68.jpg",
-    title: "» Bezauberndes Gesteck «",
-    price: "Preis auf Anfrage",
-    season: "sommer"
+    id: 67,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_68.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'sommer'
+  },
+  {
+    id: 68,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_69.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 69,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_70.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 70,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_71.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 71,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_72.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 72,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_73.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 73,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_74.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 74,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_75.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 75,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_76.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 76,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_77.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 77,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_78.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 78,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_79.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 79,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_80.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 80,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_81.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 81,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_82.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 82,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_83.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 83,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_84.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 84,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_85.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 85,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_86.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 86,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_87.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 87,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_88.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 88,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_89.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 89,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_90.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 90,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_91.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 91,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_92.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 92,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_93.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 93,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_94.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 94,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_95.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 95,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_96.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
+  },
+  {
+    id: 96,
+    img: 'assets/img/products/gestecke/bilder_gross/gestecke_97.jpg',
+    title: '» Bezauberndes Gesteck «',
+    price: 'Preis auf Anfrage',
+    season: 'winter'
   }
 ];

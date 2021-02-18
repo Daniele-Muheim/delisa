@@ -6,16 +6,25 @@ import { ViewportScroller } from '@angular/common';
   selector: 'app-root',
   template: `
     <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/Home">
       <img src="./assets/img/logo.png" height="80" alt="delisa logo">
      </a>
     <links>
       <ul class="navbar-nav mr-auto">
         <li class="nav-item" *ngFor="let route of leftRoutes">
-          <a class="nav-link waves-light" mdbWavesEffect routerLink="/{{ route.routerlink }}" routerLinkActive="{{ route.routerlink }}">{{ route.url }}</a>
+          <a class="nav-link waves-light" mdbWavesEffect routerLink="/{{ route.routerlink }}"
+          routerLinkActive="{{ route.routerlink }}">{{ route.url }}</a>
         </li>
       </ul>
+      <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#!" class="nav-link navbar-link-2 waves-effect">
+                <i class="fas fa-shopping-cart pl-0"></i>
+              </a>
+            </li>
+          </ul>
     </links>
+
     </mdb-navbar>
   <router-outlet></router-outlet>
   <section style="padding: 0">
@@ -33,13 +42,14 @@ import { ViewportScroller } from '@angular/common';
             Gestecke<br>
             Geburt<br>
             Gesägtes aus Holz<br>
-            Grabschmuck</b>
+            Grabschmuck<br>
+            Geknüpftes</b>
             </p>
           <p>
           </div>
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
         <h3><i class="fa fa-1x fa-address-book font-weight-bold"></i> Kontakt</h3>
-        <p>Email: delisa.handwerk@gmail.com <br> 
+        <p>Email: delisa.handwerk@gmail.com <br>
         <a href="mailto: delisa.handwerk@gmail.com">Mail senden</a></p>
         <p>Usserhus 9<br>6023 Rothenburg</p>
         </div>
@@ -56,13 +66,11 @@ import { ViewportScroller } from '@angular/common';
             </a>
           </div>
         </div>
-    </footer> 
+    </footer>
   </section>
 `
 })
 export class AppComponent {
-  
-  fullpage_api: any;
 
   constructor(private router: Router, private viewportScroller: ViewportScroller) {
     this.router.events.pipe().subscribe((e: any) => {
@@ -77,41 +85,51 @@ export class AppComponent {
       });
     });
   }
-  
+
+  fullpage_api: any;
+
+  leftRoutes: any[] = [
+    {
+      url: 'Home',
+      routerlink: 'selbstgemachte-geschenke'
+    },
+    {
+      url: 'Geschenke',
+      routerlink: 'geschenke'
+    },
+    {
+      url: 'Gestecke',
+      routerlink: 'gestecke'
+    },
+    {
+      url: 'Geburt',
+      routerlink: 'geburt'
+    },
+    {
+      url: 'Gesägtes',
+      routerlink: 'gesaegtes',
+    },
+    {
+      url: 'Grabschmuck',
+      routerlink: 'grabschmuck',
+    },
+    {
+      url: 'Geknüpftes',
+      routerlink: 'geknuepftes',
+    },
+    {
+      url: 'Kontakt',
+      routerlink: 'contact',
+    },
+    {
+      url: 'Partner',
+      routerlink: 'partner',
+    }
+  ];
+
 
   getRef(fullPageRef) {
     this.fullpage_api = fullPageRef;
   }
-
-  leftRoutes: any[] = [
-    {
-      url: "Home",
-      routerlink: "selbstgemachte-geschenke"
-    },
-    {
-      url: "Geschenke",
-      routerlink: "geschenke"
-    },
-    {
-      url: "Gestecke",
-      routerlink: "gestecke"
-    },
-    {
-      url: "Geburt",
-      routerlink: "geburt"
-    },
-    {
-      url: "Gesägtes",
-      routerlink: "gesaegtes",
-    },
-    {
-      url: "Grabschmuck",
-      routerlink: "grabschmuck",
-    },
-    {
-      url: "Kontakt",
-      routerlink: "contact",
-    }
-  ];
 }
 

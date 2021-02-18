@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { DataService } from '../../shared/services/data.service';
 import { GRABSCHMUCK } from '../../shared/data/data-grabschmuck';
-
 @Component({
   selector: 'app-grab',
   templateUrl: 'grab.component.html'

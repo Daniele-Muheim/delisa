@@ -1,3 +1,5 @@
+import { PartnerComponent } from './Partner/partner.component';
+import { MakrameeComponent } from './makramee/makramee.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SelectivePreloadingStrategy } from './selective-preloading-strategy';
@@ -12,6 +14,8 @@ import { GesteckeDetailComponent } from './gestecke/gestecke-detail/gestecke-det
 import { GrabComponent } from './grab/grab.component';
 import { GrabDetailComponent } from './grab/grab-detail/grab-detail.component';
 import { HomeComponent } from './home/home.component';
+import { MakrameeDetailComponent } from './makramee/makramee-detail/makramee-detail.component';
+
 
 const routes: Routes = [
   { path: 'selbstgemachte-geschenke', component: HomeComponent },
@@ -24,7 +28,10 @@ const routes: Routes = [
   { path: 'gesaegtes-detail/:id', component: GesaegtesDetailComponent },
   { path: 'grabschmuck', component: GrabComponent },
   { path: 'grabschmuck-detail/:id', component: GrabDetailComponent },
+  { path: 'geknuepftes', component: MakrameeComponent },
+  { path: 'geknuepftes-detail/:id', component: MakrameeDetailComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'partner', component: PartnerComponent },
   { path: '**', component: HomeComponent }
 ];
 
